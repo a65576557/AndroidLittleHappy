@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtUserName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/lblUserID"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/lblEmail"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtpassWD"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/lblPassword"
+            android:inputType="textPassword"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtpassWDCheck"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/lblPasswordCheck"
+            android:inputType="textPassword"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/txtuserNickName"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:hint="@string/lblUserName"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imgLuckyPic"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@color/colorMoccasin"
+            android:tooltipText="按下更換顯示圖片" />
+
+        <TextView
+            android:id="@+id/txtLuckyPic"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="0"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="活動公開的時間?"
+            />
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/seekbar"
+            android:max="100"
+            android:progress="0"
+            android:tooltipText="預設活動有效時間"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:text="0小時"
+            android:id="@+id/lblValidTime"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_weight="2">
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/btnCancel"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="@string/btnRegister"
+            android:layout_weight="8"
+            android:textSize="20dp" />
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
